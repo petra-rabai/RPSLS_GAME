@@ -52,14 +52,14 @@ Check the identities{
 		Compare the User and Machine identities based on the game rules
 		Rules check{
 			Scissors cuts Paper
-			Paper covers Rock
-			Rock crushes Lizard
-			Lizard poisons Spock
-			Spock smashes Scissors
-			Scissors decapitates Lizard
 			Lizard eats Paper
-			Paper disproves Spock
+			Paper covers Rock
 			Spock vaporizes Rock
+			Rock crushes Lizard
+			Scissors decapitates Lizard
+			Lizard poisons Spock
+			Paper disproves Spock
+			Spock smashes Scissors
 			Rock crushes Scissors
 		}
 	If the user win:
