@@ -84,10 +84,12 @@ namespace RPSLS_GAME
 
         private static void GameTable()
         {
+            Console.Clear();
             Console.WriteLine("Choose an item: \n" + "Paper - P\n" + "Scissor - S\n" 
                 + "Rock - R\n" + "Lizard - L\n" + "Spock -V\n");
             char UserPressedKey = StoreUserInput();
             char MachinePressedKey = MachineChoose();
+
         }
 
         private static char MachineChoose()
@@ -95,9 +97,11 @@ namespace RPSLS_GAME
             char[] items = {'P','S','R','L','V'};
             char MachineChoosedItem;
             Random choose = new Random();
-            MachineChoosedItem = Char.Parse(choose.Next(items.Length).ToString());
+            int choose_helper = choose.Next(items.Length);
+            MachineChoosedItem = items[choose_helper];
             return MachineChoosedItem;
         }
+
 
     }
 }
