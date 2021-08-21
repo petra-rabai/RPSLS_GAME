@@ -1,0 +1,81 @@
+Game initialize{
+	Check database exist
+	If not exist
+	Create game database{
+	Game identities (ID, Name, Key value):
+		Scissor - S,
+		Rock - R,
+		Paper - P,
+		Lizard - L,
+		Spock - V
+	User data (ID):
+		User name (string)
+		Choosed identity (Game identities.id)
+		Wins (num)
+		Loses (num)
+	}
+
+	Create the game console UI
+	Title
+	Rules
+	User actions( start a game, quit the game)
+	If the user start a game
+		Create connection to the db 
+	Else
+		quit the game
+}
+
+
+Get data {
+	from the user{
+		Ask the User name and choosed identity
+	}
+	from the machine{
+		Machine choose a random identity from the db
+	}
+}
+
+Store data{
+	from the user{
+		Store the user name and the choosed identity to the db
+	}
+	from the machine{
+		Store the choosed random identity to a temporary variable
+	}
+}
+
+Check the identities{
+	If the User and Machine choosed identity are equal:
+		Delete the stored identity from the User and the Machine.
+		Restart the choosing cycle
+	Else
+		Compare the User and Machine identities based on the game rules
+		Rules check{
+			Scissors cuts Paper
+			Paper covers Rock
+			Rock crushes Lizard
+			Lizard poisons Spock
+			Spock smashes Scissors
+			Scissors decapitates Lizard
+			Lizard eats Paper
+			Paper disproves Spock
+			Spock vaporizes Rock
+			Rock crushes Scissors
+		}
+	If the user win:
+		Store the result to the db.
+	else
+		Store the result to the db
+}
+
+
+Game finalize{
+	Print the result to the screen.
+	Ask user to restart the game or quit the game
+
+	If user choose restart:
+		Restart the choosing cycle
+	else
+		Close the connection to the db
+		Quit the game
+}
