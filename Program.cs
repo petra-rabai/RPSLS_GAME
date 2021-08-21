@@ -85,10 +85,9 @@ namespace RPSLS_GAME
             char UserPressedKey = StoreUserInput();
             char MachinePressedKey = MachineChoose();
             CheckChoosedOption(ref UserPressedKey, ref MachinePressedKey);
-            Console.WriteLine("If you want a new game hit the E key \n" + "If you save your result hit the M key\n" + "If you want to quit hit the Q key\n");
-            KeyCheck();
             SaveGameData(UserPressedKey, MachinePressedKey);
-
+            Console.WriteLine("If you want a new game hit the E key \n" + "If you want to quit hit the Q key\n");
+            KeyCheck();
         }
 
         public static void SaveGameData(char UserPressedKey, char MachinePressedKey)
@@ -97,7 +96,42 @@ namespace RPSLS_GAME
             string Username = Console.ReadLine();
             string Userchoosedoption = "";
             string Machinechoosedoption = "";
+            Userchoosedoption = DefineUserChoosedOption(UserPressedKey, Userchoosedoption);
+            Machinechoosedoption = DefineMachineChoosedOption(MachinePressedKey, Machinechoosedoption);
+            string result = "Username: " + Username + " \n" + "Choosed option by the User: " + Userchoosedoption + "\n"
+                + "Choosed option by the Machine: " + Machinechoosedoption + "\n";
+            string filepath = "GameResult.txt";
+            File.WriteAllText(filepath, result);
+        }
 
+        private static string DefineMachineChoosedOption(char MachinePressedKey, string Machinechoosedoption)
+        {
+            switch (MachinePressedKey)
+            {
+                case 'P':
+                    Machinechoosedoption = "Paper";
+                    break;
+                case 'S':
+                    Machinechoosedoption = "Scissor";
+                    break;
+                case 'R':
+                    Machinechoosedoption = "Rock";
+                    break;
+                case 'L':
+                    Machinechoosedoption = "Lizard";
+                    break;
+                case 'V':
+                    Machinechoosedoption = "Spock";
+                    break;
+                default:
+                    break;
+            }
+
+            return Machinechoosedoption;
+        }
+
+        private static string DefineUserChoosedOption(char UserPressedKey, string Userchoosedoption)
+        {
             switch (UserPressedKey)
             {
                 case 'P':
@@ -119,30 +153,7 @@ namespace RPSLS_GAME
                     break;
             }
 
-            switch (MachinePressedKey)
-            {
-                case 'P':
-                    Machinechoosedoption = "Paper";
-                    break;
-                case 'S':
-                    Machinechoosedoption = "Scissor";
-                    break;
-                case 'R':
-                    Machinechoosedoption = "Rock";
-                    break;
-                case 'L':
-                    Machinechoosedoption = "Lizard";
-                    break;
-                case 'V':
-                    Machinechoosedoption = "Spock";
-                    break;
-                default:
-                    break;
-            }
-            TextWriter saveddata = new StreamWriter("GameResult.txt");
-            saveddata.WriteLine("User name: ", Username);
-            saveddata.WriteLine("Choosed item by the User: ", Userchoosedoption);
-            saveddata.WriteLine("Choosed item by the Machine: ", Machinechoosedoption);
+            return Userchoosedoption;
         }
 
         private static void CheckChoosedOption(ref char UserPressedKey, ref char MachinePressedKey)
@@ -185,6 +196,7 @@ namespace RPSLS_GAME
 
         private static void PrintResult(int UserPoint, int MachinePoint)
         {
+            Console.Clear();
             if (UserPoint > MachinePoint)
             {
                 Console.WriteLine("You are WIN! :)");
