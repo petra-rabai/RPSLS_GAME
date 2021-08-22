@@ -14,11 +14,6 @@ namespace RPSLS_GAME
             GameInitialize();
         }
         private static void GameInitialize()
-        {           
-            UISetup();
-        }
-
-        private static void UISetup()
         {
             Console.Clear();
             Console.Title = "RPSLS GAME";
@@ -49,7 +44,7 @@ namespace RPSLS_GAME
                     Environment.Exit(0);
                     break;
                 case 'B':
-                    UISetup();
+                    GameInitialize();
                     break;
                 case 'E':
                     GameTable();
@@ -147,6 +142,11 @@ namespace RPSLS_GAME
         }
 
         public static void SaveGameData(char UserPressedKey, char MachinePressedKey)
+        {
+            StoreTheResult(UserPressedKey, MachinePressedKey);
+        }
+
+        private static void StoreTheResult(char UserPressedKey, char MachinePressedKey)
         {
             Console.WriteLine("Add your name: ");
             string Username = Console.ReadLine();
