@@ -13,27 +13,33 @@ namespace RPSLS_GAME
         {
             GameInitialize();
         }
-
         private static void GameInitialize()
-        {
-            GameUICreation();
+        {           
+            UISetup();
         }
-        private static void GameUICreation()
+
+        private static void UISetup()
         {
             Console.Clear();
             Console.Title = "RPSLS GAME";
-            Console.WriteLine("Welcome to the RPSLS Game\n" + "Rock, Paper, Scissor, Lizard, Spock\n" 
-                + "If you need to read the game rules hit the H key\n" 
+            Console.WriteLine("Welcome to the RPSLS Game\n" + "Rock, Paper, Scissor, Lizard, Spock\n"
+                + "If you need to read the game rules hit the H key\n"
                 + "Hit the E key to start the game or hit the Q key to quit the game\n"
                 + "If you want to go back to the main screen hit the B key\n");
-            KeyCheck();
+            UserAction();
         }
 
-        private static void KeyCheck()
+        private static void UserAction()
         {
+            char UserPressedKey;
             WaitForUser();
-            char UserPressedKey = StoreUserInput();
+            UserPressedKey = StoreUserInput();
+            UserPressedKey = PressedKeyValidation(UserPressedKey);
+            ChoosedOptionValidation(UserPressedKey);
+        }
 
+        private static void ChoosedOptionValidation(char UserPressedKey)
+        {
             switch (UserPressedKey)
             {
                 case 'H':
@@ -43,7 +49,7 @@ namespace RPSLS_GAME
                     Environment.Exit(0);
                     break;
                 case 'B':
-                    GameUICreation();
+                    UISetup();
                     break;
                 case 'E':
                     GameTable();
@@ -51,6 +57,20 @@ namespace RPSLS_GAME
                 default:
                     break;
             }
+        }
+
+        private static char PressedKeyValidation(char UserPressedKey)
+        {
+            while ((UserPressedKey != 'H') && (UserPressedKey != 'Q') && (UserPressedKey != 'B') && (UserPressedKey != 'E'))
+            {
+                Console.Clear();
+                Console.WriteLine("Please hit a valid key: \n" + "Valid keys are: \n" + "H - Help\n" + "E - Start the Game \n" +
+                    "Q - Quit the Game\n" + "B - Back to the Main screen\n");
+                WaitForUser();
+                UserPressedKey = StoreUserInput();
+            }
+
+            return UserPressedKey;
         }
 
         private static char StoreUserInput()
@@ -69,25 +89,61 @@ namespace RPSLS_GAME
         private static void GameRulesHelper()
         {
             Console.Clear();
+            HelperUI();
+            UserAction();
+        }
+
+        private static void HelperUI()
+        {
             Console.WriteLine("The Game rules: ");
             Console.WriteLine("Scissors cuts Paper\n" + "Paper covers Rock\n" + "Rock crushes Lizard\n" + "Lizard poisons Spock\n"
                 + "Spock smashes Scissors\n" + "Scissors decapitates Lizard\n" + "Lizard eats Paper\n" + "Paper disproves Spock\n"
-                + "Spock vaporizes Rock\n" + "Rock crushes Scissors\n" + "\n" + "If you want to go back to the main screen hit the B key\n" 
+                + "Spock vaporizes Rock\n" + "Rock crushes Scissors\n" + "\n" + "If you want to go back to the main screen hit the B key\n"
                 + "If you want to quit the game hit the Q key\n");
-            KeyCheck();
         }
 
         private static void GameTable()
         {
+            char UserPressedKey, MachinePressedKey;
+            GameStart();
+            GameLogic(out UserPressedKey, out MachinePressedKey);
+            SaveGameData(UserPressedKey, MachinePressedKey);
+            GameFinalize();
+        }
+
+        private static void GameLogic(out char UserPressedKey, out char MachinePressedKey)
+        {
+            UserPressedKey = StoreUserInput();
+            MachinePressedKey = MachineChoose();
+            UserPressedKey = ChoosedKeyValidation(UserPressedKey);
+            CheckChoosedOption(ref UserPressedKey, ref MachinePressedKey);
+        }
+
+        private static char ChoosedKeyValidation(char UserPressedKey)
+        {
+            while ((UserPressedKey != 'P') && (UserPressedKey != 'S') && (UserPressedKey != 'R') && (UserPressedKey != 'L') && (UserPressedKey != 'V'))
+            {
+                Console.Clear();
+                Console.WriteLine("Please hit a valid key: \n" + "Valid keys are: \n" + "Paper - P\n" + "Scissor - S \n" +
+                    "Rock - R\n" + "Lizard - L\n" + "Spock -V\n");
+                WaitForUser();
+                UserPressedKey = StoreUserInput();
+            }
+
+            return UserPressedKey;
+        }
+
+        private static void GameStart()
+        {
             Console.Clear();
             Console.WriteLine("Choose an item: \n" + "Paper - P\n" + "Scissor - S\n"
                 + "Rock - R\n" + "Lizard - L\n" + "Spock -V\n");
-            char UserPressedKey = StoreUserInput();
-            char MachinePressedKey = MachineChoose();
-            CheckChoosedOption(ref UserPressedKey, ref MachinePressedKey);
-            SaveGameData(UserPressedKey, MachinePressedKey);
-            Console.WriteLine("If you want a new game hit the E key \n" + "If you want to quit hit the Q key\n");
-            KeyCheck();
+        }
+
+        private static void GameFinalize()
+        {
+            Console.WriteLine("\n"+"If you want a new game hit the E key \n" + "If you want to quit hit the Q key\n");
+            UserAction();
         }
 
         public static void SaveGameData(char UserPressedKey, char MachinePressedKey)
@@ -98,10 +154,12 @@ namespace RPSLS_GAME
             string Machinechoosedoption = "";
             Userchoosedoption = DefineUserChoosedOption(UserPressedKey, Userchoosedoption);
             Machinechoosedoption = DefineMachineChoosedOption(MachinePressedKey, Machinechoosedoption);
-            string result = "Username: " + Username + " \n" + "Choosed option by the User: " + Userchoosedoption + "\n"
+            string timestamp = DateTime.Now.ToString("MM/dd/yyyy h:mm tt");
+            string savedresult;
+            string Gameresult = "\n" + "Username: " + Username + " \n" + "Choosed option by the User: " + Userchoosedoption + "\n"
                 + "Choosed option by the Machine: " + Machinechoosedoption + "\n";
-            string filepath = "GameResult.txt";
-            File.WriteAllText(filepath, result);
+            savedresult = "\n" + timestamp + Gameresult;
+            File.AppendAllText("GameResult.txt", savedresult);
         }
 
         private static string DefineMachineChoosedOption(char MachinePressedKey, string Machinechoosedoption)
