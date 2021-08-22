@@ -1,0 +1,710 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_r_p_s_l_s___g_a_m_e_1_1_program" kind="class" prot="package">
+    <compoundname>RPSLS_GAME::Program</compoundname>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1ada661eac0dc8342431bd6afe713b05d9" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.Main</definition>
+        <argsstring>(string[] args)</argsstring>
+        <name>Main</name>
+        <param>
+          <type>string[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>The Main. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The argsstring[].</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="15" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="15" bodyend="18"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aa12ecf6a9a4de995b2423fb47b52bddd" compoundref="_program_8cs" startline="23" endline="32">RPSLS_GAME.Program.GameInitialize</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1aa12ecf6a9a4de995b2423fb47b52bddd" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.GameInitialize</definition>
+        <argsstring>()</argsstring>
+        <name>GameInitialize</name>
+        <briefdescription>
+<para>The GameInitialize. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="23" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="23" bodyend="32"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aea340517c2d98885fbf5c76bf01b7ed4" compoundref="_program_8cs" startline="37" endline="44">RPSLS_GAME.Program.UserAction</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aba5ac487fb1f2ed4b9427fd87956ce61" compoundref="_program_8cs" startline="50" endline="69">RPSLS_GAME.Program.ChoosedOptionValidation</referencedby>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ada661eac0dc8342431bd6afe713b05d9" compoundref="_program_8cs" startline="15" endline="18">RPSLS_GAME.Program.Main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1aea340517c2d98885fbf5c76bf01b7ed4" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.UserAction</definition>
+        <argsstring>()</argsstring>
+        <name>UserAction</name>
+        <briefdescription>
+<para>The UserAction. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="37" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="37" bodyend="44"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aba5ac487fb1f2ed4b9427fd87956ce61" compoundref="_program_8cs" startline="50" endline="69">RPSLS_GAME.Program.ChoosedOptionValidation</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a41832a31314e50483b7f9ee0be6bdf69" compoundref="_program_8cs" startline="76" endline="88">RPSLS_GAME.Program.PressedKeyValidation</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ac8107d2f4760ca891b7960253f558051" compoundref="_program_8cs" startline="94" endline="99">RPSLS_GAME.Program.StoreUserInput</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a291ae2c5ee47eafd6dda81bc01fc04fa" compoundref="_program_8cs" startline="104" endline="108">RPSLS_GAME.Program.WaitForUser</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aa9c9db5c1a08cb9cff521b51adcbc0bc" compoundref="_program_8cs" startline="189" endline="193">RPSLS_GAME.Program.GameFinalize</referencedby>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aa12ecf6a9a4de995b2423fb47b52bddd" compoundref="_program_8cs" startline="23" endline="32">RPSLS_GAME.Program.GameInitialize</referencedby>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a2e9040da8489e8ce93d80ca71e1e46c3" compoundref="_program_8cs" startline="113" endline="118">RPSLS_GAME.Program.GameRulesHelper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1aba5ac487fb1f2ed4b9427fd87956ce61" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.ChoosedOptionValidation</definition>
+        <argsstring>(char UserPressedKey)</argsstring>
+        <name>ChoosedOptionValidation</name>
+        <param>
+          <type>char</type>
+          <declname>UserPressedKey</declname>
+        </param>
+        <briefdescription>
+<para>The ChoosedOptionValidation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserPressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPressedKeychar.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="50" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="50" bodyend="69"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aa12ecf6a9a4de995b2423fb47b52bddd" compoundref="_program_8cs" startline="23" endline="32">RPSLS_GAME.Program.GameInitialize</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a2e9040da8489e8ce93d80ca71e1e46c3" compoundref="_program_8cs" startline="113" endline="118">RPSLS_GAME.Program.GameRulesHelper</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a57536ad6a511342479011db4c5434262" compoundref="_program_8cs" startline="135" endline="142">RPSLS_GAME.Program.GameTable</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aea340517c2d98885fbf5c76bf01b7ed4" compoundref="_program_8cs" startline="37" endline="44">RPSLS_GAME.Program.UserAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1a41832a31314e50483b7f9ee0be6bdf69" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>static char RPSLS_GAME.Program.PressedKeyValidation</definition>
+        <argsstring>(char UserPressedKey)</argsstring>
+        <name>PressedKeyValidation</name>
+        <param>
+          <type>char</type>
+          <declname>UserPressedKey</declname>
+        </param>
+        <briefdescription>
+<para>The PressedKeyValidation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserPressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPressedKeychar.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The char.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="76" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="76" bodyend="88"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ac8107d2f4760ca891b7960253f558051" compoundref="_program_8cs" startline="94" endline="99">RPSLS_GAME.Program.StoreUserInput</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a291ae2c5ee47eafd6dda81bc01fc04fa" compoundref="_program_8cs" startline="104" endline="108">RPSLS_GAME.Program.WaitForUser</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aea340517c2d98885fbf5c76bf01b7ed4" compoundref="_program_8cs" startline="37" endline="44">RPSLS_GAME.Program.UserAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1ac8107d2f4760ca891b7960253f558051" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>static char RPSLS_GAME.Program.StoreUserInput</definition>
+        <argsstring>()</argsstring>
+        <name>StoreUserInput</name>
+        <briefdescription>
+<para>The StoreUserInput. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The char.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="94" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="94" bodyend="99"/>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af2cbdc6d76cace82d2939efb5d974bf8" compoundref="_program_8cs" startline="309" endline="322">RPSLS_GAME.Program.CheckPressedKey</referencedby>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af7fa45521e91db4bc9f148c242f1b0a3" compoundref="_program_8cs" startline="162" endline="174">RPSLS_GAME.Program.ChoosedKeyValidation</referencedby>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af4ac70193656eb1dc80cfc3871749306" compoundref="_program_8cs" startline="149" endline="155">RPSLS_GAME.Program.GameLogic</referencedby>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a41832a31314e50483b7f9ee0be6bdf69" compoundref="_program_8cs" startline="76" endline="88">RPSLS_GAME.Program.PressedKeyValidation</referencedby>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aea340517c2d98885fbf5c76bf01b7ed4" compoundref="_program_8cs" startline="37" endline="44">RPSLS_GAME.Program.UserAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1a291ae2c5ee47eafd6dda81bc01fc04fa" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.WaitForUser</definition>
+        <argsstring>()</argsstring>
+        <name>WaitForUser</name>
+        <briefdescription>
+<para>The WaitForUser. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="104" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="104" bodyend="108"/>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af7fa45521e91db4bc9f148c242f1b0a3" compoundref="_program_8cs" startline="162" endline="174">RPSLS_GAME.Program.ChoosedKeyValidation</referencedby>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a41832a31314e50483b7f9ee0be6bdf69" compoundref="_program_8cs" startline="76" endline="88">RPSLS_GAME.Program.PressedKeyValidation</referencedby>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aea340517c2d98885fbf5c76bf01b7ed4" compoundref="_program_8cs" startline="37" endline="44">RPSLS_GAME.Program.UserAction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1a2e9040da8489e8ce93d80ca71e1e46c3" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.GameRulesHelper</definition>
+        <argsstring>()</argsstring>
+        <name>GameRulesHelper</name>
+        <briefdescription>
+<para>The GameRulesHelper. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="113" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="113" bodyend="118"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a967b6180ca0001dc4325e66248d6bc73" compoundref="_program_8cs" startline="123" endline="130">RPSLS_GAME.Program.HelperUI</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aea340517c2d98885fbf5c76bf01b7ed4" compoundref="_program_8cs" startline="37" endline="44">RPSLS_GAME.Program.UserAction</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aba5ac487fb1f2ed4b9427fd87956ce61" compoundref="_program_8cs" startline="50" endline="69">RPSLS_GAME.Program.ChoosedOptionValidation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1a967b6180ca0001dc4325e66248d6bc73" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.HelperUI</definition>
+        <argsstring>()</argsstring>
+        <name>HelperUI</name>
+        <briefdescription>
+<para>The HelperUI. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="123" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="123" bodyend="130"/>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a2e9040da8489e8ce93d80ca71e1e46c3" compoundref="_program_8cs" startline="113" endline="118">RPSLS_GAME.Program.GameRulesHelper</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1a57536ad6a511342479011db4c5434262" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.GameTable</definition>
+        <argsstring>()</argsstring>
+        <name>GameTable</name>
+        <briefdescription>
+<para>The GameTable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="135" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="135" bodyend="142"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aa9c9db5c1a08cb9cff521b51adcbc0bc" compoundref="_program_8cs" startline="189" endline="193">RPSLS_GAME.Program.GameFinalize</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af4ac70193656eb1dc80cfc3871749306" compoundref="_program_8cs" startline="149" endline="155">RPSLS_GAME.Program.GameLogic</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af5f4ed6302c58dedf440ea1bd2778f81" compoundref="_program_8cs" startline="179" endline="184">RPSLS_GAME.Program.GameStart</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a02d0c96588a0794db4c2f90a828ef509" compoundref="_program_8cs" startline="200" endline="203">RPSLS_GAME.Program.SaveGameData</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aba5ac487fb1f2ed4b9427fd87956ce61" compoundref="_program_8cs" startline="50" endline="69">RPSLS_GAME.Program.ChoosedOptionValidation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1af4ac70193656eb1dc80cfc3871749306" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.GameLogic</definition>
+        <argsstring>(out char UserPressedKey, out char MachinePressedKey)</argsstring>
+        <name>GameLogic</name>
+        <param>
+          <type>out char</type>
+          <declname>UserPressedKey</declname>
+        </param>
+        <param>
+          <type>out char</type>
+          <declname>MachinePressedKey</declname>
+        </param>
+        <briefdescription>
+<para>The GameLogic. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserPressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPressedKeychar.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MachinePressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MachinePressedKeychar.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="149" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="149" bodyend="155"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a7579f97e047157dff79df0fe0baf3852" compoundref="_program_8cs" startline="295" endline="300">RPSLS_GAME.Program.CheckChoosedOption</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af7fa45521e91db4bc9f148c242f1b0a3" compoundref="_program_8cs" startline="162" endline="174">RPSLS_GAME.Program.ChoosedKeyValidation</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a823c4317f1ae078ea2a0507ac1489a5d" compoundref="_program_8cs" startline="369" endline="377">RPSLS_GAME.Program.MachineChoose</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ac8107d2f4760ca891b7960253f558051" compoundref="_program_8cs" startline="94" endline="99">RPSLS_GAME.Program.StoreUserInput</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a57536ad6a511342479011db4c5434262" compoundref="_program_8cs" startline="135" endline="142">RPSLS_GAME.Program.GameTable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1af7fa45521e91db4bc9f148c242f1b0a3" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>static char RPSLS_GAME.Program.ChoosedKeyValidation</definition>
+        <argsstring>(char UserPressedKey)</argsstring>
+        <name>ChoosedKeyValidation</name>
+        <param>
+          <type>char</type>
+          <declname>UserPressedKey</declname>
+        </param>
+        <briefdescription>
+<para>The ChoosedKeyValidation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserPressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPressedKeychar.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The char.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="162" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="162" bodyend="174"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ac8107d2f4760ca891b7960253f558051" compoundref="_program_8cs" startline="94" endline="99">RPSLS_GAME.Program.StoreUserInput</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a291ae2c5ee47eafd6dda81bc01fc04fa" compoundref="_program_8cs" startline="104" endline="108">RPSLS_GAME.Program.WaitForUser</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af4ac70193656eb1dc80cfc3871749306" compoundref="_program_8cs" startline="149" endline="155">RPSLS_GAME.Program.GameLogic</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1af5f4ed6302c58dedf440ea1bd2778f81" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.GameStart</definition>
+        <argsstring>()</argsstring>
+        <name>GameStart</name>
+        <briefdescription>
+<para>The GameStart. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="179" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="179" bodyend="184"/>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a57536ad6a511342479011db4c5434262" compoundref="_program_8cs" startline="135" endline="142">RPSLS_GAME.Program.GameTable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1aa9c9db5c1a08cb9cff521b51adcbc0bc" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.GameFinalize</definition>
+        <argsstring>()</argsstring>
+        <name>GameFinalize</name>
+        <briefdescription>
+<para>The GameFinalize. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="189" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="189" bodyend="193"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aea340517c2d98885fbf5c76bf01b7ed4" compoundref="_program_8cs" startline="37" endline="44">RPSLS_GAME.Program.UserAction</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a57536ad6a511342479011db4c5434262" compoundref="_program_8cs" startline="135" endline="142">RPSLS_GAME.Program.GameTable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1a99ca21ff1168dc3be5301b247d0302c0" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.StoreTheResult</definition>
+        <argsstring>(char UserPressedKey, char MachinePressedKey)</argsstring>
+        <name>StoreTheResult</name>
+        <param>
+          <type>char</type>
+          <declname>UserPressedKey</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>MachinePressedKey</declname>
+        </param>
+        <briefdescription>
+<para>The StoreTheResult. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserPressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPressedKeychar.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MachinePressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MachinePressedKeychar.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="210" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="210" bodyend="224"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a42ba119af3ac5c3c30695c6108a6cec3" compoundref="_program_8cs" startline="232" endline="256">RPSLS_GAME.Program.DefineMachineChoosedOption</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a94a27087b7d7942e0e14222f4a92dc6e" compoundref="_program_8cs" startline="264" endline="288">RPSLS_GAME.Program.DefineUserChoosedOption</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a02d0c96588a0794db4c2f90a828ef509" compoundref="_program_8cs" startline="200" endline="203">RPSLS_GAME.Program.SaveGameData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1a42ba119af3ac5c3c30695c6108a6cec3" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string RPSLS_GAME.Program.DefineMachineChoosedOption</definition>
+        <argsstring>(char MachinePressedKey, string Machinechoosedoption)</argsstring>
+        <name>DefineMachineChoosedOption</name>
+        <param>
+          <type>char</type>
+          <declname>MachinePressedKey</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Machinechoosedoption</declname>
+        </param>
+        <briefdescription>
+<para>The DefineMachineChoosedOption. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>MachinePressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MachinePressedKeychar.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Machinechoosedoption</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Machinechoosedoptionstring.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="232" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="232" bodyend="256"/>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a99ca21ff1168dc3be5301b247d0302c0" compoundref="_program_8cs" startline="210" endline="224">RPSLS_GAME.Program.StoreTheResult</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1a94a27087b7d7942e0e14222f4a92dc6e" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string RPSLS_GAME.Program.DefineUserChoosedOption</definition>
+        <argsstring>(char UserPressedKey, string Userchoosedoption)</argsstring>
+        <name>DefineUserChoosedOption</name>
+        <param>
+          <type>char</type>
+          <declname>UserPressedKey</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Userchoosedoption</declname>
+        </param>
+        <briefdescription>
+<para>The DefineUserChoosedOption. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserPressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPressedKeychar.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Userchoosedoption</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Userchoosedoptionstring.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="264" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="264" bodyend="288"/>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a99ca21ff1168dc3be5301b247d0302c0" compoundref="_program_8cs" startline="210" endline="224">RPSLS_GAME.Program.StoreTheResult</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1a7579f97e047157dff79df0fe0baf3852" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.CheckChoosedOption</definition>
+        <argsstring>(ref char UserPressedKey, ref char MachinePressedKey)</argsstring>
+        <name>CheckChoosedOption</name>
+        <param>
+          <type>ref char</type>
+          <declname>UserPressedKey</declname>
+        </param>
+        <param>
+          <type>ref char</type>
+          <declname>MachinePressedKey</declname>
+        </param>
+        <briefdescription>
+<para>The CheckChoosedOption. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserPressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPressedKeychar.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MachinePressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MachinePressedKeychar.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="295" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="295" bodyend="300"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af2cbdc6d76cace82d2939efb5d974bf8" compoundref="_program_8cs" startline="309" endline="322">RPSLS_GAME.Program.CheckPressedKey</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a94327e0c8276baa246c6be04bfd7c185" compoundref="_program_8cs" startline="352" endline="363">RPSLS_GAME.Program.PrintResult</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af4ac70193656eb1dc80cfc3871749306" compoundref="_program_8cs" startline="149" endline="155">RPSLS_GAME.Program.GameLogic</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1af2cbdc6d76cace82d2939efb5d974bf8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.CheckPressedKey</definition>
+        <argsstring>(ref char UserPressedKey, ref char MachinePressedKey, out int UserPoint, out int MachinePoint)</argsstring>
+        <name>CheckPressedKey</name>
+        <param>
+          <type>ref char</type>
+          <declname>UserPressedKey</declname>
+        </param>
+        <param>
+          <type>ref char</type>
+          <declname>MachinePressedKey</declname>
+        </param>
+        <param>
+          <type>out int</type>
+          <declname>UserPoint</declname>
+        </param>
+        <param>
+          <type>out int</type>
+          <declname>MachinePoint</declname>
+        </param>
+        <briefdescription>
+<para>The CheckPressedKey. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserPressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPressedKeychar.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MachinePressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MachinePressedKeychar.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UserPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPointint.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MachinePoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MachinePointint.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="309" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="309" bodyend="322"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a823c4317f1ae078ea2a0507ac1489a5d" compoundref="_program_8cs" startline="369" endline="377">RPSLS_GAME.Program.MachineChoose</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ad4c72483bd538f215a656efbc57d782d" compoundref="_program_8cs" startline="331" endline="345">RPSLS_GAME.Program.RulesCheck</references>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ac8107d2f4760ca891b7960253f558051" compoundref="_program_8cs" startline="94" endline="99">RPSLS_GAME.Program.StoreUserInput</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a7579f97e047157dff79df0fe0baf3852" compoundref="_program_8cs" startline="295" endline="300">RPSLS_GAME.Program.CheckChoosedOption</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1ad4c72483bd538f215a656efbc57d782d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.RulesCheck</definition>
+        <argsstring>(char UserPressedKey, char MachinePressedKey, ref int UserPoint, ref int MachinePoint)</argsstring>
+        <name>RulesCheck</name>
+        <param>
+          <type>char</type>
+          <declname>UserPressedKey</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>MachinePressedKey</declname>
+        </param>
+        <param>
+          <type>ref int</type>
+          <declname>UserPoint</declname>
+        </param>
+        <param>
+          <type>ref int</type>
+          <declname>MachinePoint</declname>
+        </param>
+        <briefdescription>
+<para>The RulesCheck. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserPressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPressedKeychar.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MachinePressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MachinePressedKeychar.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UserPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPointint.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MachinePoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MachinePointint.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="331" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="331" bodyend="345"/>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af2cbdc6d76cace82d2939efb5d974bf8" compoundref="_program_8cs" startline="309" endline="322">RPSLS_GAME.Program.CheckPressedKey</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1a94327e0c8276baa246c6be04bfd7c185" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.PrintResult</definition>
+        <argsstring>(int UserPoint, int MachinePoint)</argsstring>
+        <name>PrintResult</name>
+        <param>
+          <type>int</type>
+          <declname>UserPoint</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>MachinePoint</declname>
+        </param>
+        <briefdescription>
+<para>The PrintResult. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPointint.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MachinePoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MachinePointint.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="352" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="352" bodyend="363"/>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a7579f97e047157dff79df0fe0baf3852" compoundref="_program_8cs" startline="295" endline="300">RPSLS_GAME.Program.CheckChoosedOption</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1a823c4317f1ae078ea2a0507ac1489a5d" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>static char RPSLS_GAME.Program.MachineChoose</definition>
+        <argsstring>()</argsstring>
+        <name>MachineChoose</name>
+        <briefdescription>
+<para>The MachineChoose. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The char.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="369" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="369" bodyend="377"/>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af2cbdc6d76cace82d2939efb5d974bf8" compoundref="_program_8cs" startline="309" endline="322">RPSLS_GAME.Program.CheckPressedKey</referencedby>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af4ac70193656eb1dc80cfc3871749306" compoundref="_program_8cs" startline="149" endline="155">RPSLS_GAME.Program.GameLogic</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_r_p_s_l_s___g_a_m_e_1_1_program_1a02d0c96588a0794db4c2f90a828ef509" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void RPSLS_GAME.Program.SaveGameData</definition>
+        <argsstring>(char UserPressedKey, char MachinePressedKey)</argsstring>
+        <name>SaveGameData</name>
+        <param>
+          <type>char</type>
+          <declname>UserPressedKey</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>MachinePressedKey</declname>
+        </param>
+        <briefdescription>
+<para>The SaveGameData. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UserPressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UserPressedKeychar.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>MachinePressedKey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MachinePressedKeychar.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="200" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="200" bodyend="203"/>
+        <references refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a99ca21ff1168dc3be5301b247d0302c0" compoundref="_program_8cs" startline="210" endline="224">RPSLS_GAME.Program.StoreTheResult</references>
+        <referencedby refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a57536ad6a511342479011db4c5434262" compoundref="_program_8cs" startline="135" endline="142">RPSLS_GAME.Program.GameTable</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines the <ref refid="class_r_p_s_l_s___g_a_m_e_1_1_program" kindref="compound">Program</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" line="10" column="1" bodyfile="C:/Users/petra/Documents/GitHub/RPSLS_GAME/Program.cs" bodystart="9" bodyend="378"/>
+    <listofallmembers>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a7579f97e047157dff79df0fe0baf3852" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>CheckChoosedOption</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af2cbdc6d76cace82d2939efb5d974bf8" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>CheckPressedKey</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af7fa45521e91db4bc9f148c242f1b0a3" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>ChoosedKeyValidation</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aba5ac487fb1f2ed4b9427fd87956ce61" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>ChoosedOptionValidation</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a42ba119af3ac5c3c30695c6108a6cec3" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>DefineMachineChoosedOption</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a94a27087b7d7942e0e14222f4a92dc6e" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>DefineUserChoosedOption</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aa9c9db5c1a08cb9cff521b51adcbc0bc" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>GameFinalize</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aa12ecf6a9a4de995b2423fb47b52bddd" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>GameInitialize</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af4ac70193656eb1dc80cfc3871749306" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>GameLogic</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a2e9040da8489e8ce93d80ca71e1e46c3" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>GameRulesHelper</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af5f4ed6302c58dedf440ea1bd2778f81" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>GameStart</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a57536ad6a511342479011db4c5434262" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>GameTable</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a967b6180ca0001dc4325e66248d6bc73" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>HelperUI</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a823c4317f1ae078ea2a0507ac1489a5d" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>MachineChoose</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ada661eac0dc8342431bd6afe713b05d9" prot="package" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>Main</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a41832a31314e50483b7f9ee0be6bdf69" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>PressedKeyValidation</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a94327e0c8276baa246c6be04bfd7c185" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>PrintResult</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ad4c72483bd538f215a656efbc57d782d" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>RulesCheck</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a02d0c96588a0794db4c2f90a828ef509" prot="public" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>SaveGameData</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a99ca21ff1168dc3be5301b247d0302c0" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>StoreTheResult</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ac8107d2f4760ca891b7960253f558051" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>StoreUserInput</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aea340517c2d98885fbf5c76bf01b7ed4" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>UserAction</name></member>
+      <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a291ae2c5ee47eafd6dda81bc01fc04fa" prot="private" virt="non-virtual"><scope>RPSLS_GAME::Program</scope><name>WaitForUser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

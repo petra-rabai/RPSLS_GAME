@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_r_p_s_l_s___g_a_m_e_1_1_program" kind="class"><name>RPSLS_GAME::Program</name>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ada661eac0dc8342431bd6afe713b05d9" kind="function"><name>Main</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aa12ecf6a9a4de995b2423fb47b52bddd" kind="function"><name>GameInitialize</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aea340517c2d98885fbf5c76bf01b7ed4" kind="function"><name>UserAction</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aba5ac487fb1f2ed4b9427fd87956ce61" kind="function"><name>ChoosedOptionValidation</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a41832a31314e50483b7f9ee0be6bdf69" kind="function"><name>PressedKeyValidation</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ac8107d2f4760ca891b7960253f558051" kind="function"><name>StoreUserInput</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a291ae2c5ee47eafd6dda81bc01fc04fa" kind="function"><name>WaitForUser</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a2e9040da8489e8ce93d80ca71e1e46c3" kind="function"><name>GameRulesHelper</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a967b6180ca0001dc4325e66248d6bc73" kind="function"><name>HelperUI</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a57536ad6a511342479011db4c5434262" kind="function"><name>GameTable</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af4ac70193656eb1dc80cfc3871749306" kind="function"><name>GameLogic</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af7fa45521e91db4bc9f148c242f1b0a3" kind="function"><name>ChoosedKeyValidation</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af5f4ed6302c58dedf440ea1bd2778f81" kind="function"><name>GameStart</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1aa9c9db5c1a08cb9cff521b51adcbc0bc" kind="function"><name>GameFinalize</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a99ca21ff1168dc3be5301b247d0302c0" kind="function"><name>StoreTheResult</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a42ba119af3ac5c3c30695c6108a6cec3" kind="function"><name>DefineMachineChoosedOption</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a94a27087b7d7942e0e14222f4a92dc6e" kind="function"><name>DefineUserChoosedOption</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a7579f97e047157dff79df0fe0baf3852" kind="function"><name>CheckChoosedOption</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1af2cbdc6d76cace82d2939efb5d974bf8" kind="function"><name>CheckPressedKey</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1ad4c72483bd538f215a656efbc57d782d" kind="function"><name>RulesCheck</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a94327e0c8276baa246c6be04bfd7c185" kind="function"><name>PrintResult</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a823c4317f1ae078ea2a0507ac1489a5d" kind="function"><name>MachineChoose</name></member>
+    <member refid="class_r_p_s_l_s___g_a_m_e_1_1_program_1a02d0c96588a0794db4c2f90a828ef509" kind="function"><name>SaveGameData</name></member>
+  </compound>
+  <compound refid="namespace_r_p_s_l_s___g_a_m_e" kind="namespace"><name>RPSLS_GAME</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="dir_e6bb53534ac0e427887cf7a94c0c004e" kind="dir"><name>C:</name>
+  </compound>
+  <compound refid="dir_705dfd39652f7e3a53b0939d2dc845fd" kind="dir"><name>C:/Users/petra/Documents</name>
+  </compound>
+  <compound refid="dir_557dc8d3b2b8b130d7325c46cc906712" kind="dir"><name>C:/Users/petra/Documents/GitHub</name>
+  </compound>
+  <compound refid="dir_57c23b3388c01f53fbc29465623856f9" kind="dir"><name>C:/Users/petra</name>
+  </compound>
+  <compound refid="dir_bcac92d0ff72e584f844eb8ee9b35b47" kind="dir"><name>C:/Users/petra/Documents/GitHub/RPSLS_GAME/Properties</name>
+  </compound>
+  <compound refid="dir_4ed12daebe2ca65840e7a3a4174fc8e7" kind="dir"><name>C:/Users/petra/Documents/GitHub/RPSLS_GAME</name>
+  </compound>
+  <compound refid="dir_8ceffd4ee35c3518d4e8bdc7e638efe8" kind="dir"><name>C:/Users</name>
+  </compound>
+</doxygenindex>

@@ -1,18 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RPSLS_GAME
+﻿namespace RPSLS_GAME
 {
-    class Program
+    using System;
+    using System.IO;
+
+    /// <summary>
+    /// Defines the <see cref="Program" />.
+    /// </summary>
+    internal class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The Main.
+        /// </summary>
+        /// <param name="args">The args<see cref="string[]"/>.</param>
+        internal static void Main(string[] args)
         {
             GameInitialize();
         }
+
+        /// <summary>
+        /// The GameInitialize.
+        /// </summary>
         private static void GameInitialize()
         {
             Console.Clear();
@@ -24,6 +31,9 @@ namespace RPSLS_GAME
             UserAction();
         }
 
+        /// <summary>
+        /// The UserAction.
+        /// </summary>
         private static void UserAction()
         {
             char UserPressedKey;
@@ -33,6 +43,10 @@ namespace RPSLS_GAME
             ChoosedOptionValidation(UserPressedKey);
         }
 
+        /// <summary>
+        /// The ChoosedOptionValidation.
+        /// </summary>
+        /// <param name="UserPressedKey">The UserPressedKey<see cref="char"/>.</param>
         private static void ChoosedOptionValidation(char UserPressedKey)
         {
             switch (UserPressedKey)
@@ -54,6 +68,11 @@ namespace RPSLS_GAME
             }
         }
 
+        /// <summary>
+        /// The PressedKeyValidation.
+        /// </summary>
+        /// <param name="UserPressedKey">The UserPressedKey<see cref="char"/>.</param>
+        /// <returns>The <see cref="char"/>.</returns>
         private static char PressedKeyValidation(char UserPressedKey)
         {
             while ((UserPressedKey != 'H') && (UserPressedKey != 'Q') && (UserPressedKey != 'B') && (UserPressedKey != 'E'))
@@ -68,6 +87,10 @@ namespace RPSLS_GAME
             return UserPressedKey;
         }
 
+        /// <summary>
+        /// The StoreUserInput.
+        /// </summary>
+        /// <returns>The <see cref="char"/>.</returns>
         private static char StoreUserInput()
         {
             ConsoleKeyInfo Hitkey = Console.ReadKey();
@@ -75,12 +98,18 @@ namespace RPSLS_GAME
             return UserPressedKey;
         }
 
+        /// <summary>
+        /// The WaitForUser.
+        /// </summary>
         private static void WaitForUser()
         {
             Console.WriteLine("Wait for user input: ");
             Console.Beep();
         }
 
+        /// <summary>
+        /// The GameRulesHelper.
+        /// </summary>
         private static void GameRulesHelper()
         {
             Console.Clear();
@@ -88,6 +117,9 @@ namespace RPSLS_GAME
             UserAction();
         }
 
+        /// <summary>
+        /// The HelperUI.
+        /// </summary>
         private static void HelperUI()
         {
             Console.WriteLine("The Game rules: ");
@@ -97,6 +129,9 @@ namespace RPSLS_GAME
                 + "If you want to quit the game hit the Q key\n");
         }
 
+        /// <summary>
+        /// The GameTable.
+        /// </summary>
         private static void GameTable()
         {
             char UserPressedKey, MachinePressedKey;
@@ -106,6 +141,11 @@ namespace RPSLS_GAME
             GameFinalize();
         }
 
+        /// <summary>
+        /// The GameLogic.
+        /// </summary>
+        /// <param name="UserPressedKey">The UserPressedKey<see cref="char"/>.</param>
+        /// <param name="MachinePressedKey">The MachinePressedKey<see cref="char"/>.</param>
         private static void GameLogic(out char UserPressedKey, out char MachinePressedKey)
         {
             UserPressedKey = StoreUserInput();
@@ -114,6 +154,11 @@ namespace RPSLS_GAME
             CheckChoosedOption(ref UserPressedKey, ref MachinePressedKey);
         }
 
+        /// <summary>
+        /// The ChoosedKeyValidation.
+        /// </summary>
+        /// <param name="UserPressedKey">The UserPressedKey<see cref="char"/>.</param>
+        /// <returns>The <see cref="char"/>.</returns>
         private static char ChoosedKeyValidation(char UserPressedKey)
         {
             while ((UserPressedKey != 'P') && (UserPressedKey != 'S') && (UserPressedKey != 'R') && (UserPressedKey != 'L') && (UserPressedKey != 'V'))
@@ -128,6 +173,9 @@ namespace RPSLS_GAME
             return UserPressedKey;
         }
 
+        /// <summary>
+        /// The GameStart.
+        /// </summary>
         private static void GameStart()
         {
             Console.Clear();
@@ -135,17 +183,30 @@ namespace RPSLS_GAME
                 + "Rock - R\n" + "Lizard - L\n" + "Spock -V\n");
         }
 
+        /// <summary>
+        /// The GameFinalize.
+        /// </summary>
         private static void GameFinalize()
         {
-            Console.WriteLine("\n"+"If you want a new game hit the E key \n" + "If you want to quit hit the Q key\n");
+            Console.WriteLine("\n" + "If you want a new game hit the E key \n" + "If you want to quit hit the Q key\n");
             UserAction();
         }
 
+        /// <summary>
+        /// The SaveGameData.
+        /// </summary>
+        /// <param name="UserPressedKey">The UserPressedKey<see cref="char"/>.</param>
+        /// <param name="MachinePressedKey">The MachinePressedKey<see cref="char"/>.</param>
         public static void SaveGameData(char UserPressedKey, char MachinePressedKey)
         {
             StoreTheResult(UserPressedKey, MachinePressedKey);
         }
 
+        /// <summary>
+        /// The StoreTheResult.
+        /// </summary>
+        /// <param name="UserPressedKey">The UserPressedKey<see cref="char"/>.</param>
+        /// <param name="MachinePressedKey">The MachinePressedKey<see cref="char"/>.</param>
         private static void StoreTheResult(char UserPressedKey, char MachinePressedKey)
         {
             Console.WriteLine("Add your name: ");
@@ -162,6 +223,12 @@ namespace RPSLS_GAME
             File.AppendAllText("GameResult.txt", savedresult);
         }
 
+        /// <summary>
+        /// The DefineMachineChoosedOption.
+        /// </summary>
+        /// <param name="MachinePressedKey">The MachinePressedKey<see cref="char"/>.</param>
+        /// <param name="Machinechoosedoption">The Machinechoosedoption<see cref="string"/>.</param>
+        /// <returns>The <see cref="string"/>.</returns>
         private static string DefineMachineChoosedOption(char MachinePressedKey, string Machinechoosedoption)
         {
             switch (MachinePressedKey)
@@ -188,6 +255,12 @@ namespace RPSLS_GAME
             return Machinechoosedoption;
         }
 
+        /// <summary>
+        /// The DefineUserChoosedOption.
+        /// </summary>
+        /// <param name="UserPressedKey">The UserPressedKey<see cref="char"/>.</param>
+        /// <param name="Userchoosedoption">The Userchoosedoption<see cref="string"/>.</param>
+        /// <returns>The <see cref="string"/>.</returns>
         private static string DefineUserChoosedOption(char UserPressedKey, string Userchoosedoption)
         {
             switch (UserPressedKey)
@@ -214,6 +287,11 @@ namespace RPSLS_GAME
             return Userchoosedoption;
         }
 
+        /// <summary>
+        /// The CheckChoosedOption.
+        /// </summary>
+        /// <param name="UserPressedKey">The UserPressedKey<see cref="char"/>.</param>
+        /// <param name="MachinePressedKey">The MachinePressedKey<see cref="char"/>.</param>
         private static void CheckChoosedOption(ref char UserPressedKey, ref char MachinePressedKey)
         {
             int UserPoint, MachinePoint;
@@ -221,6 +299,13 @@ namespace RPSLS_GAME
             PrintResult(UserPoint, MachinePoint);
         }
 
+        /// <summary>
+        /// The CheckPressedKey.
+        /// </summary>
+        /// <param name="UserPressedKey">The UserPressedKey<see cref="char"/>.</param>
+        /// <param name="MachinePressedKey">The MachinePressedKey<see cref="char"/>.</param>
+        /// <param name="UserPoint">The UserPoint<see cref="int"/>.</param>
+        /// <param name="MachinePoint">The MachinePoint<see cref="int"/>.</param>
         private static void CheckPressedKey(ref char UserPressedKey, ref char MachinePressedKey, out int UserPoint, out int MachinePoint)
         {
             UserPoint = 0;
@@ -236,6 +321,13 @@ namespace RPSLS_GAME
             }
         }
 
+        /// <summary>
+        /// The RulesCheck.
+        /// </summary>
+        /// <param name="UserPressedKey">The UserPressedKey<see cref="char"/>.</param>
+        /// <param name="MachinePressedKey">The MachinePressedKey<see cref="char"/>.</param>
+        /// <param name="UserPoint">The UserPoint<see cref="int"/>.</param>
+        /// <param name="MachinePoint">The MachinePoint<see cref="int"/>.</param>
         private static void RulesCheck(char UserPressedKey, char MachinePressedKey, ref int UserPoint, ref int MachinePoint)
         {
             if ((UserPressedKey == 'S' && MachinePressedKey == 'P') || (UserPressedKey == 'L' && MachinePressedKey == 'P')
@@ -252,6 +344,11 @@ namespace RPSLS_GAME
             }
         }
 
+        /// <summary>
+        /// The PrintResult.
+        /// </summary>
+        /// <param name="UserPoint">The UserPoint<see cref="int"/>.</param>
+        /// <param name="MachinePoint">The MachinePoint<see cref="int"/>.</param>
         private static void PrintResult(int UserPoint, int MachinePoint)
         {
             Console.Clear();
@@ -265,16 +362,18 @@ namespace RPSLS_GAME
             }
         }
 
+        /// <summary>
+        /// The MachineChoose.
+        /// </summary>
+        /// <returns>The <see cref="char"/>.</returns>
         private static char MachineChoose()
         {
-            char[] items = {'P','S','R','L','V'};
+            char[] items = { 'P', 'S', 'R', 'L', 'V' };
             char MachineChoosedItem;
             Random choose = new Random();
             int choose_helper = choose.Next(items.Length);
             MachineChoosedItem = items[choose_helper];
             return MachineChoosedItem;
         }
-
-
     }
 }
